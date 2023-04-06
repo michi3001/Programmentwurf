@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TINF20_Prog1_5368572",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "TINF20_Prog1_5368572::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TINF20_Prog1_5368572-Debug-9668cfb2c039354f8af7.json",
+					"name" : "TINF20_Prog1_5368572",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Michael_Schick/Studium/DHBW/Semester2/Programmieren/Programmentwurf/CLion_Projekt/TINF20_Prog1_5368572/cmake-build-debug",
+		"source" : "C:/Michael_Schick/Studium/DHBW/Semester2/Programmieren/Programmentwurf/CLion_Projekt/TINF20_Prog1_5368572"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
