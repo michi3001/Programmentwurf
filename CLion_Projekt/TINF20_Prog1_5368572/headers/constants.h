@@ -7,7 +7,7 @@
 
 // CONSTANTS
 #define PARAMETER 5    // !!!Insert the Parameter Value here!!!
-#define FILEPATH "../PPM_Files/!FinalVersion_Parameter_5.ppm"     // !!!Defines the name and the location of the generated file!!!
+#define FILEPATH "../PPM_Files/Test_Param5.ppm"     // !!!Defines the name and the location of the generated file!!!
 
 #define X_PIXEL 1001 // ppm file width
 #define Y_PIXEL 1001 // ppm file height

@@ -34,8 +34,8 @@ int create_ppm(char* pMatrix) {     // Creates the ppm file and changes the char
 void fillMatrix(char* pMatrix) {   // Matrix is filled with characters
     for(int i = 0; i < MATRIXROW; i++) {
         if (i == 0 || i == MATRIXROW - 1) {
+                                                        //Pointer to an array indexing: Arrayindex = row * num_columns + column;
             for (int j = 0; j < MATRIXCOL; j++) pMatrix[i * MATRIXCOL + j] = '.';   //draws the border
-                                                                                    //Pointer to an array indexing: Arrayindex = row * num_columns + column;
             printf("\n");
         }
         else {
