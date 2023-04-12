@@ -7,6 +7,7 @@
 #ifndef TINF20_PROG1_5368572_FUNCTIONS_H
 #define TINF20_PROG1_5368572_FUNCTIONS_H
 
+
 int create_ppm(char* pMatrix) {     // Creates the ppm file and changes the character symbols to pixels
     FILE *p_file = fopen((FILEPATH),"wb");  //mode wb - write binary mode
     if (NULL != p_file) {   //if theres an error due to the fopen() function p_file = NULL
@@ -29,6 +30,7 @@ int create_ppm(char* pMatrix) {     // Creates the ppm file and changes the char
     return 0;
 }
 
+
 void fillMatrix(char* pMatrix) {   // Matrix is filled with characters
     for(int i = 0; i < MATRIXROW; i++) {
         if (i == 0 || i == MATRIXROW - 1) {
@@ -45,6 +47,7 @@ void fillMatrix(char* pMatrix) {   // Matrix is filled with characters
     }
 }
 
+
 void drawMatrix(char* pMatrix) {    // Prints the matrix on the console
     for(int i=0; i<MATRIXROW; i++) {
         printf("\n");
@@ -52,12 +55,14 @@ void drawMatrix(char* pMatrix) {    // Prints the matrix on the console
     }
 }
 
+
 void setPixel(char* pMatrix, char cSymbol, int iX, int iY) {    // Change one specified pixel with the
     //X&Y Coordinate are indexed like the Array Index, means from 0 to ...
     assert(iX <= MATRIXROW);
     assert(iY <= MATRIXCOL);
     pMatrix[iX * MATRIXCOL + iY] = cSymbol;
 }
+
 
 void drawLine(char* pMatrix, int iVerticalIdx0, int iHorizontalIdx0, int iVerticalIdx1, int iHorizontalIdx1) {      //Draws a line from one Matrix Field to another Matrix Field
     int iDeltaY =  abs (iVerticalIdx1 - iVerticalIdx0);
@@ -81,6 +86,7 @@ void drawLine(char* pMatrix, int iVerticalIdx0, int iHorizontalIdx0, int iVertic
         }
     }
 }
+
 
 void drawCircle(char* pMatrix, char cSymbol, int iRadius) {     // Draws a circle depending on the Radius
     int x = iRadius;
