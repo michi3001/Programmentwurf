@@ -114,12 +114,12 @@ void drawCircle(char* pMatrix, char cSymbol, int iRadius) {     // Draws a circl
 }
 
 
-void calc_equidistant_points(point* pPointArray, int iRadius) {         // Calculates points which are on a circel with the radius XY and which are equidistant
+void calc_equidistant_points(point* pPointArray, int iRadius, int iParameter) {         // Calculates points which are on a circel with the radius XY and which are equidistant
                                                                         // (have the same distance to each other)
     // Pointer on struct array: (pPointArray+ArrayIndex)->Element
-    double dAngle = 2 * PI / PARAMETER;        //Angle in rad
+    double dAngle = 2 * PI / iParameter;        //Angle in rad
 
-    for(int i=0; i < PARAMETER; i++) {
+    for(int i=0; i < iParameter; i++) {
         double dPointAngle = i * dAngle;
 
         //Calculate X-Value
@@ -133,8 +133,8 @@ void calc_equidistant_points(point* pPointArray, int iRadius) {         // Calcu
 }
 
 
-void connect_points(char* pMatrix, point* pInnerPoints, point* pOuterPoints) {  //Connect the equidistant points from the inner circle with the points on the outer circle
-    for(int i=0; i < PARAMETER; i++) {
+void connect_points(char* pMatrix, point* pInnerPoints, point* pOuterPoints, int iParameter) {  //Connect the equidistant points from the inner circle with the points on the outer circle
+    for(int i=0; i < iParameter; i++) {
         //void drawLine(char* pMatrix, int iVerticalIdx0, int iHorizontalIdx0, int iVerticalIdx1, int iHorizontalIdx1)
         drawLine(pMatrix, (pInnerPoints + i)->y, (pInnerPoints + i)->x, (pOuterPoints + i)->y, (pOuterPoints + i)->x);
     }
